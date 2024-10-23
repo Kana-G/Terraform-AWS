@@ -1,7 +1,8 @@
 # AWS EKS Setup with Terraform
 
 This project creates complete EKS cluster in AWS. This project uses common module to host common code and makes it very easy to work on mutiple env like tesst, prod etc
-Refer [Terraform-AWS - Architecture.png](https://github.com/Kana-G/Terraform-AWS/blob/main/Terraform-AWS%20-%20Architecture.png) to view architecture.
+## Architecture
+![Terraform-AWS - Architecture.png](https://github.com/Kana-G/Terraform-AWS/blob/main/Terraform-AWS%20-%20Architecture.png)
 
 ## Prerequisites
 
@@ -47,6 +48,7 @@ Clone this repository to your local machine using the following command:
 Review the variables.tf file and modify the values as needed. You can also create a terraform.tfvars file to provide values for the variables.
 ### Step 5: Plan and Apply the Configuration
 ```terraform plan```
+
 ```terraform apply```
 ### Step 6: Configure kubectl
 ```aws eks --region <your-region> update-kubeconfig --name <your-cluster-name>```
